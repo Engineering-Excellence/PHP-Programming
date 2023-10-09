@@ -18,7 +18,8 @@ echo "안녕 PHP<br/>";
 print "또 안녕 PHP<br/>";
 
 //	상수 정의 : define("상수이름", 값);
-define("PIE", 3.141592);
+//define("PIE", 3.141592);
+const PIE = 3.141592;
 echo "PIE = " . PIE . "<br/>";                // PHP의 문자열 연결 연산자 : "."
 
 $PI = 3.14;
