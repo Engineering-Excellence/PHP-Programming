@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <script type="text/javascript">
+        function moveNext(obj, len, nextObj) {
+//		obj : 현재 객체
+//		length : 최대 입력 가능 문자수
+//		nextObj : 입력 가능 문자수 만큼 입력되면 이동할 다음 객체
+//		if(조건식) {
+//			조건식의 결과가 true일 경우 실행할 문장;
+//			...;
+//		} else {
+//			조건식의 결과가 false일 경우 실행할 문장;
+//			...;
+//		}
+
+//		obj.value.length : 현재 객체에 입력된 문자의 개수
+            if (obj.value.length == len) {
+//			지정된 객체로 포커스를 이동시킨다.
+                nextObj.focus();
+            }
+        }
+    </script>
+</head>
+
+<body>
+<form action="05_result1.php" method="post" name="jform">
+    <input type="text" name="j1" size="6" maxlength="6" onkeyup="moveNext(this, 6, document.jform.j2)"> -
+    <input type="text" name="j2" size="7" maxlength="7" onkeyup="moveNext(this, 7, document.jform.sendBtn)"><br/>
+    이름 : <input type="text" name="name"/> <!-- size="10" maxlength="6" -->
+    <input type="submit" value="보내기" name="sendBtn">
+</form>
+</body>
+
+</html>
