@@ -8,7 +8,7 @@ include './function/07_myCalendar.php';
 <head>
     <meta charset="UTF-8">
     <title>Calendar</title>
-    <link rel="stylesheet" href="../css/07_calendar.css">
+    <link rel="stylesheet" href="../public/css/07_calendar.css">
 </head>
 
 <body>
